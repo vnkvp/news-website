@@ -1,0 +1,23 @@
+{
+  "name": "portal-noticias",
+  "version": "1.0.0",
+  "description": "site de noticias",
+  "main": "news.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnkvp/news-website.git"
+  },
+  "author": "Oswaldo Inácio Dias Junior",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnkvp/news-website/issues"
+  },
+  "homepage": "https://github.com/vnkvp/news-website#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1"
+  }
+}
