@@ -1,7 +1,8 @@
-module.exports = function (app) {
-    app.get('/noticias', function (req, res) {
-        //conexao mysql
+module.exports = function(app){
+    app.get('/noticias', function(req,res){
+
         var mysql = require('mysql');
+
         var connection = mysql.createConnection({
             host: 'localhost',
             user: 'root',
@@ -9,10 +10,10 @@ module.exports = function (app) {
             database: 'news_website'
         });
 
-        //connection.query(<sql>,<Functioncallback>)
-        connection.query('select * from noticias',function(error, result){
+        connection.query("SELECT * FROM noticias", function(error, result){
             res.send(result);
         });
-        //     res.render('noticias/noticias');
+
+        //res.render('noticias/noticias');
     });
-};
+}

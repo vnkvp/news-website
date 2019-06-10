@@ -1,5 +1,4 @@
 module.exports = function (app) {
-
     app.get('/form-add-noticia', function (req, res) {
         var mysql = require('mysql');
         var connection = mysql.createConnection({
