@@ -1,20 +1,13 @@
-var express = require('express');
-var app = express();
-
-app.set('view engine', 'ejs');
-
-app.get('/', function(req, res){
- res.render('section/home.ejs');
+var app = require('./config/server')
+app.get('/', function (req, res) {
+    res.render('home/index');
 });
-
-app.get('/agorism', function(req, res){
-    res.render('section/agorism.ejs');
-   });
-
-app.get('/economy', function(req, res){
-    res.render('section/economy.ejs');
-   });
-
-app.listen(3000, function(){
-console.log('node express running');
+app.get('/form-add-noticia', function (req, res) {
+    res.render('admin/form_add_noticia');
+});
+app.get('/noticias', function (req, res) {
+    res.render('noticias/noticias');
+});
+app.listen(3000, function () {
+    console.log('server ON');
 });
