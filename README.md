@@ -1,2 +1,1 @@
-# news-website back-end on node.js
-
+# JS fullstack news website project
