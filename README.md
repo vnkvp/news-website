@@ -1,2 +1,1 @@
-# news-website
-
+# JS fullstack news website project

@@ -9,6 +9,8 @@ module.exports.noticias = function (app, req, res) {
 }
 module.exports.noticia = function (app, req, res) {
 
+console.log(req);
+
     var connection = app.config.dbConnection();
     var noticiasModel = new app.app.models.noticiasModel(connection);
 
